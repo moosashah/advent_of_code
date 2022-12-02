@@ -1,6 +1,6 @@
 const { readFileSync } = require('fs')
 
-const singleElf = readFileSync('./day1_input', 'utf-8').trimEnd().split('\n\n')
+const singleElf = readFileSync('./real_input', 'utf-8').trimEnd().split('\n\n')
 
 const singleElfSum = singleElf.map((elf) =>
   elf
