@@ -1,0 +1,17 @@
+{
+  "name": "2024",
+  "version": "1.0.0",
+  "description": "Advent of Code 2024",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
