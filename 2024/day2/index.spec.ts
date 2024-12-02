@@ -14,8 +14,10 @@ const isSafe = (levels: string[]): boolean => {
 };
 
 const isSafeWithDampener = (levels: string[]): boolean => {
+  if (isSafe(levels)) return true;
   return levels.some((_, i) => {
-    const modifiedLine = levels.slice(0, i).concat(levels.slice(i + 1));
+    const modifiedLine = [...levels];
+    modifiedLine.splice(i, 1);
     return isSafe(modifiedLine);
   });
 };
